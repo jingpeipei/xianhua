@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a:hover,
+a:focus {
+	box-shadow: 0 0 0 #fff;
+}
+
+html,body {
+	font-family: "微软雅黑";
+	width: 100%;
+	font-size: 62.5%;
+}
+
+body header {
+	position: fixed;
+	width: 96%;
+	display: flex;
+	padding: 3% 2%;
+	align-content: center;
+	background: #F58611;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+}
+
+body header .h_left {
+	width: 20%;
+	text-align: left;
+}
+
+body header .h_left a {
+	text-decoration: none;
+	color: white;
+}
+
+body header .h_center {
+	width: 70%;
+	text-align: center;
+}
+
+body header .h_center p {
+	margin: 0;
+}
+
+body header .h_right {
+	width: 20%;
+	text-align: right;
+}
+
+body .header {
+	position: relative;
+	z-index: -1;
+}
+
+body .l_banner {
+	padding-top: 4vh;
+	width: 100%;
+	background: #F6F6F6;
+}
+
+body .l_banner a {
+	text-decoration: none;
+}
+
+body .l_banner a img {
+	width: 100%;
+	text-align: center;
+}
+
+body .l_banner a:hover,
+body .l_banner a:focus {
+	box-shadow: 0 0 0 #fff;
+}
+
+body .l_dao {
+	background: #F6F6F6;
+	width: 100%;
+	padding: 1rem 0;
+}
+
+body .l_dao div {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	font-size: 1rem;
+}
+
+body .l_dao div .l_left {
+	width: 80%;
+	display: inline-block;
+	text-align: left;
+}
+
+body .l_dao div .l_right {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+}
+
+body .bottom {
+	width: 94%;
+	padding: 3%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+body .bottom .b_left {
+	width: 30%;
+}
+
+body .bottom .b_left a {
+	width: 100%;
+}
+
+body .bottom .b_left a img {
+	width: 100%;
+	display: block;
+}
+
+body .bottom .b_center {
+	width: 50%;
+}
+
+body .bottom .b_center p {
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 2px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+body .bottom .b_center p .name {
+	color: #7B7B7B;
+}
+
+body .bottom .b_center p .big {
+	color: #888888;
+}
+
+body .bottom .b_center p .con {
+	color: #2FB74F;
+}
+
+body .bottom .b_right {
+	width: 16%;
+	text-align: right;
+}
+
+body .bottom .b_right a {
+	color: #F58611;
+}
+
+
+/*# sourceMappingURL=style5.css.map */

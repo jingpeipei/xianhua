@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Font/demo-files/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<script src = "../js/jquery-3.1.1.js"></script>
+		<script src = "../js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="j_box">
+			<div class="head">
+				<div class="h_left">
+					<select>
+						<option>合肥</option>
+						<option>北京</option>
+						<option>上海</option>
+					</select>
+				</div>
+				<div class="h_center">
+					<p>我要出租</p>
+				</div>
+				<div class="h_right">
+					<span class="icon icon-search"></span>
+				</div>
+			</div class="head">			<div class="tips">
+				<span class="icon icon-volume-low"></span>请填认证写您的房源信息，审核通过后会发布上架！
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<div class="li_left">您的姓名</div>
+						<div class="li_right"><input type="text" placeholder="我们如何称呼您"/></div>
+					</li>
+					<li>
+						<div class="li_left">手机号码</div>
+						<div class="li_right"><input type="text" placeholder="我们会及时和您联系"/></div>
+					</li>
+					<li>
+						<div class="li_left">小区名称</div>
+						<div class="li_right"><input type="text" placeholder="请输入小区名称"/></div>
+					</li>
+					<li>
+						<div class="li_left">意向租金</div>
+						<div class="li_right"><input type="text" placeholder="例如5000"/></div>
+					</li>
+					<li>
+						<div class="li_left">起租日期</div>
+						<div class="li_right"><input type="date" placeholder="请选择起租日期   >"/></div>
+					</li>
+					<li>
+						<div class="li_left">租房类型</div>
+						<div class="li_right"><input type="text" placeholder="整租             >"/></div>
+					</li>
+					<li>
+						<div class="li_left">意向户型</div>
+						<div class="li_right"><input type="text" placeholder="请选择户型       >"/></div>
+					</li>
+				</ul>
+			</div>
+			<div class="more">
+				<input type="checkbox"> 我已阅读并同意<a href = "#">《房嫂租房出租委托协议》</a>
+			</div>
+			<div class="login">
+				<a href="" data-toggle="modal" data-target="#myModal">提交委托</a>
+			</div>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						&nbsp;
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×            </button>
+					</div>
+					<div class="modal-body"><img src = "../img/dui.png"/><p>请保持所填号码的手机的通话畅通状态</p></div>
+					<div class="modal-footer">
+						<a href="">好的，我知道了！</a>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+			<div class="box">
+				
+			</div>
+			<footer>
+				<ul>
+					<li>
+						<a href="../index.html">
+							<span class="icon icon-home3"></span>
+							<p>首页</p>
+						</a>
+					</li>
+					<li class="on">
+						<a href="nav2.html">
+							<span class="icon icon-user-tie"></span>
+							<p>我要出租</p>
+						</a>
+					</li>
+					<li>
+						<a href="nav3.html">
+							<span class="icon icon-newspaper"></span>
+							<p>看房日程</p>
+						</a>
+					</li>
+					<li>
+						<a href="nav4.html">
+							<span class="icon icon-user"></span>
+							<p>个人中心</p>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+    <script>
+    	$(function() {
+				$('#myModal').modal('hide')
+			});
+    </script>
+</html>

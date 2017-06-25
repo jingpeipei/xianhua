@@ -1,0 +1,92 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑";
+  width: 100%;
+  font-size: 62.5%; }
+  body header {
+    width: 96%;
+    display: flex;
+    padding: 3% 2%;
+    align-content: center;
+    background: #F58611;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4rem; }
+    body header .h_left {
+      width: 20%;
+      text-align: left; }
+      body header .h_left select {
+        border: 0;
+        background: transparent;
+        color: #fff; }
+    body header .h_center {
+      width: 70%;
+      text-align: center; }
+      body header .h_center p {
+        margin: 0; }
+    body header .h_right {
+      width: 10%;
+      text-align: right; }
+  body .bottom {
+    width: 96%;
+    margin: 0.6rem 2%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC; }
+    body .bottom .b_left {
+      width: 30%; }
+      body .bottom .b_left a {
+        width: 100%; }
+        body .bottom .b_left a img {
+          width: 100%; }
+    body .bottom .b_center {
+      width: 50%; }
+      body .bottom .b_center p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 2px; }
+        body .bottom .b_center p .name {
+          color: #7B7B7B; }
+        body .bottom .b_center p .big {
+          color: #888888; }
+        body .bottom .b_center p .con {
+          color: #2FB74F; }
+    body .bottom .b_right {
+      width: 16%; }
+      body .bottom .b_right a {
+        color: #F58611; }
+  body footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #FAFAFA;
+    border-top: 1px solid #F2F2F2;
+    padding: 0.8rem 0; }
+    body footer ul {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      body footer ul .on a {
+        color: #F58611; }
+      body footer ul li {
+        width: 25%;
+        list-style: none;
+        text-align: center; }
+        body footer ul li a {
+          color: #8A8A8A; }
+          body footer ul li a span {
+            font-size: 1.8rem; }
+          body footer ul li a p {
+            margin: 0;
+            font-size: 1rem; }
+        body footer ul li p {
+          margin: 0;
+          font-size: 1rem; }
+        body footer ul li .on {
+          color: #F58611; }
+
+/*# sourceMappingURL=style1.css.map */

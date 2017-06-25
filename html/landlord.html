@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Font/demo-files/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style3.css"/>
+		<script src="../js/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="../distb/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../distb/date/css/bootstrap-datetimepicker.css"/>
+		<script src="../distb/js/bootstrap.min.js"></script>
+		<script src="../distb/date/js/bootstrap-datetimepicker.js"></script>
+		<style>
+		.l_center{
+			display: flex;
+			align-self: center;
+		}
+			.form-control[readonly]{
+				background: #fff;
+				
+			}
+			.form-control{
+				color: #888888;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="h_left">
+				<a href="../index.html"><span class="fa fa-chevron-left"></span></a>
+			</div>
+			<div class="h_center">
+				<p>我是房东</p>
+			</div>
+			<div class="h_right">
+
+			</div>
+		</header>
+		<div class="l_banner">
+			<img src="../img/2.jpg"/>
+		</div>
+		<div class="l_content">
+			<div>
+				<span class="l_left">姓名</span>
+				<span class="l_center">
+					<input type="text" placeholder="您的姓名"/>
+				</span>
+			</div>
+			<div>
+				<span class="l_left">手机号</span>
+				<span class="l_center">
+					<input type="text" placeholder="您的手机号"/>
+				</span>
+				<span class="l_right"></span>
+			</div>
+			<div>
+				<span class="l_left">起租房日期</span>
+				<span class="l_center">
+					<input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime form-control">			
+				</span>
+				<span class="l_right"></span>
+			</div>
+			<div>
+				<span class="l_left">类型</span>
+				<span class="l_center">
+					<input type="text" placeholder="请选择房屋类型"/>
+				</span>
+				<span class="right">
+					<i class="fa fa-chevron-right"></i>
+				</span>
+			</div>
+			<div>
+				<span class="l_left">小区名称</span>
+				<span class="l_center">
+					<input type="text" placeholder="房屋所在小区名称"/>
+				</span>
+				<span class="right">
+					<i class="fa fa-chevron-right"></i>
+				</span>
+			</div>
+			<div>
+				<span class="l_left">户型</span>
+				<span class="l_center">
+					<input type="text" placeholder="请选择房屋户型"/>
+				</span>
+				<span class="right">
+					<i class="fa fa-chevron-right"></i>
+				</span>
+			</div>
+			<div>
+				<span class="l_left">意向租金</span>
+				<span class="l_center">
+					<input type="text" placeholder="您的意向租金"/>
+				</span>
+				<span class="right">
+					<i class="fa fa-chevron-right"></i>
+				</span>
+			</div>
+		</div>
+		<div class="l_footer">
+			<div>
+				<button data-dismiss="modal" data-toggle="modal" data-target="#mod">提交委托</button>
+			</div>
+		</div>
+		<div class="modal fade" id="mod">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">	
+						&nbsp;
+						<button class="btn btn-default close pull-right" data-dismiss="modal"><span>&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<p><img src="../img/dui.png" /></p>
+						<p class="l_text">恭喜您，委托成功</p>
+						<p>请保持所填号码手机的通话畅通状态，我们的客服将会在48小时内与您取得联系</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+	</script>
+</html>

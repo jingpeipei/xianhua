@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 62.5%;
+	width: 100%;
+}
+
+.head {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	display: flex;
+	padding: 3% 2%;
+	align-content: center;
+	background: #F58611;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+}
+
+.head .h_left {
+	width: 20%;
+	text-align: left;
+}
+
+.head .h_left a {
+	text-decoration: none;
+	color: white;
+}
+
+.head .h_left select {
+	border: 0;
+	background: transparent;
+	color: #fff;
+}
+
+.head .h_center {
+	width: 70%;
+	text-align: center;
+}
+
+.head .h_center p {
+	margin: 0;
+}
+
+.head .h_right {
+	width: 20%;
+	text-align: right;
+}
+
+.header {
+	position: relative;
+	z-index: -1;
+}
+
+.l_dao {
+	width: 100%;
+	display: flex;
+	background: #F6F6F6;
+    padding: 1rem 0;
+}
+
+.l_dao span {
+	font-size: 1rem;
+	padding-left: 4vw;
+	display: inline-block;
+	border-left: 0.5rem solid #FD9301;
+}
+
+.l_content1 {
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.l_content1 div {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.l_content1 div .p1 {
+	padding-top: 2vh;
+	font-size: 1rem;
+}
+
+.l_content1 div .p2 {
+	padding-top: 1vh;
+	font-size: 0.5rem;
+}
+
+.l_content1 div img {
+	width: 100%;
+}
+
+.l_content {
+	width: 100%;
+}
+
+.l_content div {
+	width: 100%;
+	line-height: 4rem;
+	font-size: 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+border-bottom: 1px solid #f0f0f0;
+}
+
+.l_content div .l_left {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	padding-left: 5vw;
+}
+
+.l_content div .l_right {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	color: #A9A9A9;
+	overflow: hidden;
+}
+
+.l_content div .l_right input {
+	border: none;
+	box-shadow: 0 0 0 #fff;
+	outline: none;
+	border: none;
+	width: 100%;
+}
+
+::-webkit-input-placeholder{
+	padding-left: 1rem;
+}
+
+.l_footer {
+	width: 100%;
+	padding: 3% 0;
+}
+
+.l_footer div {
+	width: 70%;
+	text-align: center;
+	display: flex;
+	margin: 0 auto;
+}
+
+.l_footer div button {
+	color: white;
+	font-size: 1rem;
+	width: 100%;
+	line-height: 3rem;
+	background: #F58611;
+	border-radius: 5px 5px 5px 5px;
+	border: 0;
+}
+
+.modal-body p{
+	text-align: center;
+}
+
+
+

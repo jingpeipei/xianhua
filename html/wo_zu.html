@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/wo_zu.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css"/>
+		<script src="../js/angular-1.4.6.min.js"></script>
+		<script src="../js/angular-route.min.js"></script>
+		<script src="../js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="h_left">
+				<a href="login.html"><span class="fa fa-chevron-left"></span></a>
+			</div>
+			<div class="h_center">
+				<p>租房订单</p>
+			</div>
+			<div class="h_right">
+
+			</div>
+		</header>
+		<header class="header">
+			<div class="h_left">
+				<a href="login.html"><span class="fa fa-chevron-left"></span></a>
+			</div>
+			<div class="h_center">
+				<p>租房订单</p>
+			</div>
+			<div class="h_right">
+
+			</div>
+		</header>
+		<div class="l_dao">
+			<a href="#allIndent" class="on">
+			   <div>全部订单</div>
+			</a>
+			<a href="#b">
+			   <div>代付款</div>
+			</a>
+			<a href="#c">
+			   <div>待评价</div>
+			</a>
+			<a href="#d">
+			   <div>已完成</div>
+			</a>
+		</div>
+		<ng-view></ng-view>
+		<script>
+			var app=angular.module("app",["ngRoute"]);
+			app.config(function($routeProvider){
+				$routeProvider.when("/allIndent",{
+					templateUrl:"route/allIndent.html"
+				})
+				.when("/b",{
+					templateUrl:"route/b.html"
+				})
+				.when("/c",{
+					templateUrl:"route/b.html"
+				})
+				.when("/d",{
+					templateUrl:"route/b.html"
+				})
+				.otherwise("/allIndent")
+			})
+			$(".l_dao a").click(function(){
+				$(this).addClass("on").siblings().removeClass("on");
+			})
+		</script>
+	</body>
+</html>

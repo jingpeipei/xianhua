@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    width:100%;
+    font-size: 62.5%;
+   header {
+       position: fixed;
+    width: 96%;
+    display: flex;
+    padding: 3% 2%;
+    align-content: center;
+    background: #F58611;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    .h_left {
+    width: 20%;
+    text-align: left;
+    a{
+    text-decoration: none;
+    color: white;
+    }
+}
+.h_center {
+    width: 70%;
+    text-align: center;
+    p {
+    margin: 0;
+}
+}
+.h_right {
+    width: 10%;
+    text-align: right;
+}
+}
+.header{
+    position: relative;
+    z-index: -1;
+}
+.l_banner{
+    font-size: 1rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 2vh solid #F6F6F6;
+    width:100%;
+    display: flex;
+    div{
+        width:100%;
+        text-align: center;
+        img{
+            width: 70%;
+        }
+        p{margin:0;}
+    }
+}
+.bottom{
+        width: 96%;
+        margin: 0.8rem 2%;
+        
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #CCCCCC;
+        .b_left{
+            width: 30%;
+            a{
+                width: 100%;
+                img{
+                    width:100%
+                }
+            }
+            a:hover,a:focus{
+                box-shadow: 0 0 0 #fff;
+               text-decoration: none;
+            }
+        }
+        .b_center{
+            width: 50%;
+            p{
+                font-size: 1rem;
+                margin-top: 0;
+                margin-bottom: 2px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                .name{
+                    color: #7B7B7B;;
+                }
+                .big{
+                    color: #888888;
+                }
+                .con{
+                    color: #2FB74F;
+                }
+                a:hover,a:focus{
+                box-shadow: 0 0 0 #fff;
+               text-decoration: none;
+            }
+            }
+        }
+        .b_right{
+           width: 16%;
+           a{
+               color: #F58611;
+           }
+           a:hover,a:focus{
+                box-shadow: 0 0 0 #fff;
+               text-decoration: none;
+            }
+        }
+    }
+}

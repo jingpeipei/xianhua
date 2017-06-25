@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    width:100%;
+    font-size: 62.5%;
+    header {
+    width: 96%;
+    display: flex;
+    padding: 3% 2%;
+    align-content: center;
+    background: #F58611;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    .h_left {
+    width: 20%;
+    text-align: left;
+    select {
+    border: 0;
+    background: transparent;
+    color: #fff;
+}
+}
+.h_center {
+    width: 70%;
+    text-align: center;
+    p {
+    margin: 0;
+}
+}
+.h_right {
+    width: 10%;
+    text-align: right;
+}
+}
+.bottom{
+        width: 96%;
+        margin: 0.6rem 2%;
+        
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #CCCCCC;
+        .b_left{
+            width: 30%;
+            a{
+                width: 100%;
+                img{
+                    width:100%
+                }
+            }
+        }
+        .b_center{
+            width: 50%;
+            p{
+                font-size: 1rem;
+                margin-top: 0;
+                margin-bottom: 2px;
+                .name{
+                    color: #7B7B7B;;
+                }
+                .big{
+                    color: #888888;
+                }
+                .con{
+                    color: #2FB74F;
+                }
+            }
+        }
+        .b_right{
+           width: 16%;
+           a{
+               color: #F58611;
+           }
+        }
+    }
+    footer{
+     width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #FAFAFA;
+    border-top: 1px solid #F2F2F2;
+    padding: 0.8rem 0;
+    ul{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    .on{
+        a{
+             color: #F58611;
+        }
+    }
+    li{
+   width: 25%;
+    list-style: none;
+    text-align: center;
+    a{
+        color: #8A8A8A;
+        span{
+            font-size: 1.8rem;
+        }
+        p{
+            margin:0;
+           font-size: 1rem;
+        }
+    }
+    
+p{
+    margin:0;
+    font-size: 1rem;
+}
+.on{
+    color: #F58611;
+}
+}
+}
+}
+}

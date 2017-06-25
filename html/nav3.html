@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Font/demo-files/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<script src="../js/angular-1.4.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.1.1.js"></script>
+	</head>
+
+	<body>
+		<div class="j_box">
+			<div class="head">
+				<div class="h_left">
+					<select>
+						<option>合肥</option>
+					</select>
+				</div>
+				<div class="h_center">
+					<p>看房日程</p>
+				</div>
+				<div class="h_right">
+					<span class="icon icon-search"></span>
+				</div>
+			</div>
+			<div class="nav3">
+				<div class="nav">
+					<a href="#proceed" class="on">进行中的约看</a>
+					<a href="#complete">已完成的约看</a>
+					<div class="xian"></div>
+				</div>
+			</div>
+			<div ng-view></div>
+			<div class="box">
+
+			</div>
+			<footer>
+				<ul>
+					<li>
+						<a href="../index.html">
+							<span class="icon icon-home3"></span>
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="nav2.html">
+							<span class="icon icon-user-tie"></span>
+							<p>我要出租</p>
+						</a>
+					</li>
+					<li class="on">
+						<a href="nav3.html">
+							<span class="icon icon-newspaper"></span>
+							<p>看房日程</p>
+						</a>
+					</li>
+					<li>
+						<a href="nav4.html">
+							<span class="icon icon-user"></span>
+							<p>个人中心</p>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+	<script>
+		$(".j_box .nav a").click(function() {
+			$(this).addClass("on").siblings().removeClass("on").parent().find(".xian").css("left", $(this).index() * 50 + "%")
+		})
+		var app = angular.module("myapp", ["ngRoute"]);
+
+		//		//路由跳转
+		app.config(function($routeProvider) {
+			$routeProvider
+				.when("/proceed", {
+					templateUrl: "proceed.html"
+				})
+				.when("/complete", {
+					templateUrl: "complete.html"
+				})
+				.otherwise("/proceed");
+		});
+	</script>
+
+</html>
